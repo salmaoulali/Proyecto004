@@ -1,79 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/et1"
-        android:layout_width="223dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="108dp"
-        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:hint="Introduce el primer valor"
-        android:inputType="numberSigned"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="numberSigned" />
 
     <EditText
         android:id="@+id/et2"
-        android:layout_width="225dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="165dp"
-        android:layout_marginBottom="222dp"
-        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="Introduce el segundo valor"
-        android:inputType="numberSigned"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="numberSigned" />
 
     <CheckBox
         android:id="@+id/check1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sumar"
-        app:layout_constraintBottom_toTopOf="@+id/check2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.284"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="20dp"
+        android:text="Sumar" />
 
     <CheckBox
         android:id="@+id/check2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restar"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.284"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Restar" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.289"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="15dp"
+        android:text="Calcular" />
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="267dp"
-        android:text="Resultado: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="30dp"
+        android:text="Resultado:"
+        android:textSize="18sp" />
+
+</LinearLayout>
